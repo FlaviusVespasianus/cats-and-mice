@@ -59,9 +59,10 @@ abstract class Animal {
         . "'s position: " . "X: ". $this->x . " Y: ". $this->y . ".";
     }
 
-    public function __construct($name)
+    public function __construct($name, Battlefield $field)
     {
         $this->name = $name;
+        $this->map = $field;
     }
 
     /*
@@ -71,11 +72,13 @@ abstract class Animal {
      *
      */
     //every animal has got its own copy of the map so it is possible to address $fields values
+    /*
     public function setMap(Battlefield $field)
     {
         $this->map = $field;
     }
-
+    */
+    
     //make turn (visual work)
     public function makeMove(Movement $move): void
     {
