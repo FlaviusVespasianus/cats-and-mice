@@ -49,16 +49,23 @@ class Cat extends Animal
 
     protected function getMoves(): array
     {
-        $move1 = new Movement($this->y, $this->x);
+//        $move1 = new Movement($this->y, $this->x);
         $move2 = new Movement($this->y + 1, $this->x);
         $move3 = new Movement($this->y - 1, $this->x);
         $move4 = new Movement($this->y, $this->x + 1);
         $move5 = new Movement($this->y, $this->x - 1);
-        $move6 = new Movement($this->y + 1, $this->x + 1);
-        $move7 = new Movement($this->y - 1, $this->x - 1);
+//        $move6 = new Movement($this->y + 1, $this->x + 1);
+//        $move7 = new Movement($this->y - 1, $this->x - 1);
         $move8 = new Movement($this->y + 1, $this->x - 1);
-        $move9 = new Movement($this->y - 1, $this->x + 1);
+//        $move9 = new Movement($this->y - 1, $this->x + 1);
         $arrayMove = array( $move1, $move2, $move3, $move4, $move5, $move6, $move7, $move8, $move9 );
+
+        for ($i = -1, $j = -1; $i < 1; $i++, $j++ ) {
+            $arrayMove[] = new Movement($this->y + $i, $this->x + $j);
+        }
+        for ($i = -1, $j = +1; $i < 1; $i++, $j-- ) {
+            $arrayMove[] = new Movement($this->y + $i, $this->x + $j);
+        }
 
         return $arrayMove;
     }

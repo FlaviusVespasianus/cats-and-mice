@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<p class="h1">Cats & Mice: Havoc of Chaos VI</p>
+
+
+<div class="set well">
+    <ul class="tab">
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 't1')" id="defaultOpen">Settings</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 't2')">Advanced Settings</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 't3')">Rules</a></li>
+    </ul>
+    <form id="" method="post">
+        <div class="tabcontent" id="t1">
+            <div class="tablish">
+                <table class="table borderless">
+                    <div class="form-group form-inline">
+                        <tr>
+                            <td class=""><label for="a">world size</label></td>
+                            <td><span class="labelish"> . . <span class='loader__dot'> . </span> . <span class='loader__dot'> . . </span> . . . <span class='loader__dot'> . . </span> . <span class='loader__dot'> . . </span><span class='loader__dot'> . . </span> . . . <span class='loader__dot'> . . </span> . <span class='loader__dot'> . </span><span class='loader__dot'> . </span></span></td>
+                            <td class=""><input type="number" name="a" class="shrt" placeholder="world size" value="" min="0" step="1" id="c"></td>
+                        </tr>
+                    </div>
+                    <div class="form-group form-inline">
+                        <tr>
+                            <td class=""><label for="a">number of turns</label></td>
+                            <td><span class="labelish"> . . <span class='loader__dot'> . . </span> . <span class='loader__dot'> . . </span> . . <span class='loader__dot'> . . </span> . <span class='loader__dot'> . . </span><span class='loader__dot'> . . </span> . . <span class='loader__dot'> . . . </span> . <span class='loader__dot'> . . </span></span></td>
+                            <td class=""><input type="number" name="a" class="shrt" placeholder="number of turns" value="" min="0" step="1" id="c"></td>
+                        </tr>
+                    </div>
+                    <div class="form-group form-inline">
+                        <tr>
+                            <td class=""><label for="a">number of mice</label></td>
+                            <td><span class="labelish"> . <span class='loader__dot'> . . . </span>. . .<span class='loader__dot'> . </span>. . . . <span class='loader__dot'> . . </span> . . <span class='loader__dot'> . </span><span class='loader__dot'>. . . </span><span class='loader__dot'> . . </span><span class='loader__dot'>. </span> . </span></td>
+                            <td class=""><input type="number" name="a" class="shrt " placeholder="number of mice" value="" min="0" step="1" id="a"></td>
+                        </tr>
+                    </div>
+                    <div class="form-group form-inline">
+                        <tr>
+                            <td class=""><label for="a">number of cats</label></td>
+                            <td><span class="labelish"><span class='loader__dot'> . . .</span> . . . <span class='loader__dot'> . . </span> . <span class='loader__dot'> . . . </span> . <span class='loader__dot'> . . . </span><span class='loader__dot'> . </span> . <span class='loader__dot'> . </span> . <span class='loader__dot'> . </span><span class='loader__dot'> . . </span><span class='loader__dot'> . </span> . </span></td>
+                            <td class=""><input type="number" name="a" class="shrt" placeholder="number of cats" value="" min="0" step="1" id="b"></td>
+                        </tr>
+                    </div>
+                    <div class="form-group form-inline">
+                        <tr>
+                            <td class=""><label for="a">number of dogs</label></td>
+                            <td><span class="labelish"> . . <span class='loader__dot'> . . </span> . . . <span class='loader__dot'> . . </span> . . <span class='loader__dot'> . </span> . <span class='loader__dot'> . . </span><span class='loader__dot'> . </span> . . . <span class='loader__dot'> . </span> . <span class='loader__dot'> . </span><span class='loader__dot'> . </span></span></td>
+                            <td class=""><input type="number" name="a" class="shrt" placeholder="number of dogs" value="" min="0" step="1" id="c"></td>
+                        </tr>
+                    </div>
+                </table>
+            </div>
+        </div>
+        <div class="tabcontent" id="t2">
+            <div class="form-group form-inline">
+                <label for="a">c</label>
+                <input type="number" name="a" class="shrt form-control" value="" min="0" step="1" id="c">
+            </div>
+            <div class="form-group form-inline">
+                <label for="a">c</label>
+                <input type="number" name="a" class="shrt form-control" value="" min="0" step="1" id="c">
+            </div>
+            <div class="form-group form-inline">
+                <label for="a">c</label>
+                <input type="number" name="a" class="shrt form-control" value="" min="0" step="1" id="c">
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="tabcontent" id="t3">
+            <div class="">
+                <ol start="0">
+                    <li>Cats eat mice.</li>
+                    <li>Mice have got limited line of sight, cats haven't.</li>
+                    <li>Every eighth turn cats need to sleep one turn to recover their strength.</li>
+                    <li>Having eaten a mouse, the cat needs to sleep one turn as well.</li>
+                    <li>Dogs do nothing, apart from saving nearby mice from cats (not on purpose).</li>
+                    <li>Mice and cats move one cell in each direction, dogs two cells.</li>
+                    <li>Game has no goal or end, it just runs.</li>
+                </ol>
+            </div>
+
+        </div>
+        <!--<p><a class="btn btn-info">Значение </a></p>-->
+        <!--<p><a class="btn btn-warning">Значение </a></p>-->
+        <!--<p><a class="btn btn-warning">Значение </a></p>-->
+
+
+
+    </form>
+
+</div>
+<div class="main well">
+    Resource всегда всегда преобразуется в string вида "Resource id #1", где 1 являетс
+    <pre class="gameshow">
+        я номером ресурса привязанного
+        к resource во время выполнения. И хотя не стоит т
+        очно полагаться на эту строку, которая может быть изменена в будущем, она всег
+        да будет уникальной для текущего запуска скрипта (т.е. web-
+        запроса или CLI-процесса) и не может использо
+        ваться повторно для другого ресурса. Если вы хотите получить тип ресурса, используйте get_resource_type().
+    </pre>
+
+
+</div>
+
+
+<script>
+    document.getElementById("defaultOpen").click();
+
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+
+</body>
+</html>
