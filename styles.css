@@ -23,8 +23,12 @@ aside {
     /*background: lightblue;*/
 }
 
-.shrt {
+.num-regular {
     width: 100px;
+}
+
+.num-shortened {
+    width: 20px;
 }
 
 .gameshow {
@@ -47,6 +51,17 @@ aside {
     margin: 0 auto;
 }
 
+#submit {
+    color: #dddddd;
+    height: 600px;
+    width: 800px;
+    margin: 0 auto;
+}
+.f {
+    float: left;
+    display: inline-block;
+}
+
 tr {
     line-height: 12px;
     min-height: 12px;
@@ -55,6 +70,11 @@ tr {
 
 .labelish {
     font-weight: 700;
+}
+
+.grayish {
+    color: #dfdfdf;
+    /*font-style: italic;*/
 }
 
 
@@ -90,9 +110,9 @@ tr {
 }
 
 .loader__dot:nth-child(7) {
-     animation: 8s blink infinite;
-     animation-delay: 900ms
- }
+    animation: 8s blink infinite;
+    animation-delay: 900ms
+}
 
 .loader__dot:nth-child(8) {
     animation: 8s blink infinite;
@@ -103,7 +123,7 @@ tr {
 
 
 /*invisible input*/
-input[type="number"]
+input[type="number"], input[type="number"]:disabled
 {
     background: transparent;
     border: none !important;
@@ -180,5 +200,3 @@ ul.tab li a:focus, .active {
         opacity: 1;
     }
 }
-
-
