@@ -147,8 +147,8 @@ class Battlefield
                 }
             }
         }
-
-        switch($id):
+        //надо польностью переделать
+        switch($id) {
             case 1:
                 return $nearestMouse;
                 break;
@@ -161,7 +161,7 @@ class Battlefield
             default:
                 return NULL;
                 break;
-        endswitch;
+        }
     }
 
 
